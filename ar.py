@@ -2,6 +2,7 @@ import discord
 from config import TOKEN
 from bot_logic import gen_pass
 from bot_logic import new_func
+from bot_logic import new_func1
 client = discord.Client(intents = discord.Intents.all())
 @client.event
 async def on_ready():
@@ -19,3 +20,4 @@ async def on_message(message):
 client.run(TOKEN)
 gen_pass()
 new_func()
+new_func1()
